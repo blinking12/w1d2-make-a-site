@@ -1,4 +1,4 @@
-/*.alt-text {
+.alt-text {
     color: #3E4E50;
 }
 
@@ -22,6 +22,16 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 50px solid black;
+    border-radius: 50%
+}
+.background {
+    background-color: #FFFFF2;
+}
 body{
     background-color: #8EA8C3;
 }
@@ -32,7 +42,7 @@ p {
 	font-family: Zapf Chancery, cursive;
 	color: black;
 	font-size:20px;
-}*/
+}
 
 body {
     text-align: center;
@@ -42,6 +52,14 @@ body {
     width: 250px;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
+/*.bodyimage {
+    background-image: url("../beach.jpeg");
+}*/
+
 .ugly {
     background-color: rgb(223, 176, 151);
     border: 20px solid red;
@@ -50,19 +68,19 @@ body {
 
 .beautiful {
     background: transparent;
-    border: 2px solid blue;
+    border: 2px solid #3FA7D6;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    transition: all 1s ease;
+    transition: all .8s ease;
 }
 button > span {
     font-size: 50px;
 }
 
 .beautiful:hover {
-    transform: scale(2) rotate(-45deg);
-    border: 2px solid red;
+    transform: scale(2) rotate(30deg);
+    border: 2px solid #B7B5E4;
 }
 h1 {
     font-family: 'Baloo Bhai', cursive;
@@ -70,6 +88,13 @@ h1 {
 
 header {
     background: red;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+footer {
+    background: transparent;
     color: white;
     text-align: center;
     padding: 50px;
@@ -107,4 +132,31 @@ a, a:visited, a:active {
 
 #section2 > button:first-child(2) {
     transform: rotate(180deg);
+}
+
+table {
+    border:1px solid black;
+    width:600px;
+    margin:0 auto;
+}
+
+td {
+    padding:20px;
+}
+
+tr td {
+    border-bottom: 1px solid black;
+}
+
+tr:last-child td {
+    border:none;
+}
+
+tr td:first-child {
+    text-align: right;
+    border-right:1px solid black;
+}
+
+tr td:last-child {
+    text-align: left;
 }
